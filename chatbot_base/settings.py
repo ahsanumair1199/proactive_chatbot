@@ -27,16 +27,19 @@ SECRET_KEY = env('DJANGO_SECRET_KEY')
 DEBUG = True if env("MODE") == "development" else False
 
 # allow origins
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost',
+                 '449e-182-180-122-123.ngrok-free.app']
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8000',
-    'http://127.0.0.1:8000'
+    'http://127.0.0.1:8000',
+    'https://449e-182-180-122-123.ngrok-free.app'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
-    'http://127.0.0.1:8000'
+    'http://127.0.0.1:8000',
+    'https://449e-182-180-122-123.ngrok-free.app'
 ]
 
 
