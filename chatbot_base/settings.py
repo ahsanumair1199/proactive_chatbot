@@ -28,18 +28,18 @@ DEBUG = True if env("MODE") == "development" else False
 
 # allow origins
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost',
-                 '1f99-182-180-122-123.ngrok-free.app']
+                 '2e1f-182-180-122-123.ngrok-free.app']
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
-    'https://1f99-182-180-122-123.ngrok-free.app'
+    'https://2e1f-182-180-122-123.ngrok-free.app'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
-    'https://1f99-182-180-122-123.ngrok-free.app'
+    'https://2e1f-182-180-122-123.ngrok-free.app'
 ]
 
 

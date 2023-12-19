@@ -35,6 +35,8 @@ class Conversation(models.Model):
 class GptResponse(models.Model):
     uuid = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     whatsapp_user = models.ForeignKey(WhatsappUser, on_delete=models.CASCADE)
+    conversation = models.ForeignKey(
+        Conversation, on_delete=models.CASCADE, null=True)
     text = models.TextField()
     embedding = VectorField(dimensions=1536)
     created_at = models.DateTimeField(auto_now_add=True)
