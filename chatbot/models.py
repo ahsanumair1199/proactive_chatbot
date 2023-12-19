@@ -25,7 +25,7 @@ class Conversation(models.Model):
     image_url = models.CharField(max_length=255, blank=True)
     video_url = models.CharField(max_length=255, blank=True)
     level = models.CharField(max_length=30, blank=True)
-    embedding = VectorField(dimensions=3, blank=True, null=True)
+    embedding = VectorField(dimensions=1536, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -36,7 +36,7 @@ class GptResponse(models.Model):
     uuid = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     whatsapp_user = models.ForeignKey(WhatsappUser, on_delete=models.CASCADE)
     text = models.TextField()
-    embedding = VectorField(dimensions=3)
+    embedding = VectorField(dimensions=1536)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
