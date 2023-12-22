@@ -28,18 +28,18 @@ DEBUG = True if env("MODE") == "development" else False
 
 # allow origins
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost',
-                 '2e1f-182-180-122-123.ngrok-free.app']
+                 'a70a-2401-ba80-a129-870f-5377-dc80-1bf9-1ee8.ngrok-free.app']
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
-    'https://2e1f-182-180-122-123.ngrok-free.app'
+    'https://a70a-2401-ba80-a129-870f-5377-dc80-1bf9-1ee8.ngrok-free.app'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
-    'https://2e1f-182-180-122-123.ngrok-free.app'
+    'https://a70a-2401-ba80-a129-870f-5377-dc80-1bf9-1ee8.ngrok-free.app'
 ]
 
 
@@ -96,13 +96,6 @@ DATABASES = {
         default=env('POSTGRES_URL')
     )
 }
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
 
 
 # Password validation

@@ -43,12 +43,3 @@ class GptResponse(models.Model):
 
     def __str__(self):
         return self.whatsapp_user.name
-
-
-# class ErrorLog(models.Model):
-#     error_name = models.CharField(max_length=255)
-#     message = models.TextField()
-#     created_at = models.DateTimeField(auto_now_add=True)
-
-#     def __str__(self):
-#         return self.error_name
