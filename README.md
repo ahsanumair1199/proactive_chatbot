@@ -1,3 +1,5 @@
+# Description
+A Django based project which contains the APIs to handle the Twilio and whatsapp communication. Users can chat with the chatbot via their whatsapp.
 # Setup
 
 Install required libraries
